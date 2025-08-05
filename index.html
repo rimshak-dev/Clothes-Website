@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UDEVS Clothing</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top px-4">
+  <a class="navbar-brand fw-bold" href="#">UDEVS</a>
+  <form class="d-flex mx-3">
+    <input class="form-control me-2" type="search" placeholder="Search..." />
+  </form>
+  <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Categories</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#" onclick="filterProducts('summer')">Summer Wear</a></li>
+          <li><a class="dropdown-item" href="#" onclick="filterProducts('winter')">Winter Wear</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="#" onclick="filterGender('men')">Men's Wear</a></li>
+      <li class="nav-item"><a class="nav-link" href="#" onclick="filterGender('women')">Women's Wear</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero Carousel -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/banner1.jpeg" class="d-block w-100" alt="Banner 1" />
+    </div>
+    <div class="carousel-item">
+      <img src="images/banner2.jpeg" class="d-block w-100" alt="Banner 2" />
+    </div>
+  </div>
+  <button class="carousel-control-prev" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- Product Section -->
+<section class="container my-5">
+  <h2 class="text-center mb-4">Our Products</h2>
+  <div class="row g-4" id="productList">
+    <!-- Products inserted by JavaScript -->
+  </div>
+</section>
+
+<!-- Product Modal -->
+<div class="modal fade" id="productModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content shadow">
+      <div class="modal-header">
+        <h5 class="modal-title" id="productTitle"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img id="productImage" src="" class="img-fluid mb-3" />
+        <p id="productPrice" class="fs-5 fw-bold text-success"></p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-success" onclick="addToCart()">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ Section -->
+<section class="container my-5">
+  <h2 class="text-center mb-4">FAQs</h2>
+  <div class="accordion" id="faqAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
+          What is your return policy?
+        </button>
+      </h2>
+      <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">You can return items within 7 days with original tags.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+  <div class="container text-center">
+    <div class="mb-3">
+      <a href="#" class="text-white mx-2">Facebook</a>
+      <a href="#" class="text-white mx-2">Instagram</a>
+      <a href="#" class="text-white mx-2">LinkedIn</a>
+    </div>
+    <p class="mb-0">&copy; 2025 UDEVS Clothing. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
