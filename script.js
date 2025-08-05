@@ -1,5 +1,5 @@
 const products = [
-  { name: "Men's Summer Shirt", price: 2200, category: "summer", gender: "men", image: "images/men1.jpeg" },
+  { name: "Men's Summer Shirt", price: 2200, category: "summer", gender: "men", image: "men1.jpeg" },
   { name: "Men's Polo Tee", price: 1800, category: "summer", gender: "men", image: "images/men2.jpeg" },
   { name: "Men's Kurta", price: 2500, category: "summer", gender: "men", image: "images/men3.jpeg" },
   { name: "Men's Shorts", price: 1200, category: "summer", gender: "men", image: "images/men4.jpeg" },
@@ -65,3 +65,4 @@ function filterGender(gender) {
 }
 
 document.addEventListener("DOMContentLoaded", () => renderProducts());
+
