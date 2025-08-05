@@ -1,19 +1,19 @@
 const products = [
   { name: "Men's Summer Shirt", price: 2200, category: "summer", gender: "men", image: "men1.jpeg" },
-  { name: "Men's Polo Tee", price: 1800, category: "summer", gender: "men", image: "images/men2.jpeg" },
-  { name: "Men's Kurta", price: 2500, category: "summer", gender: "men", image: "images/men3.jpeg" },
-  { name: "Men's Shorts", price: 1200, category: "summer", gender: "men", image: "images/men4.jpeg" },
+  { name: "Men's Polo Tee", price: 1800, category: "summer", gender: "men", image: "men2.jpeg" },
+  { name: "Men's Kurta", price: 2500, category: "summer", gender: "men", image: "men3.jpeg" },
+  { name: "Men's Shorts", price: 1200, category: "summer", gender: "men", image: "men4.jpeg" },
 
-  { name: "Women's Summer Dress", price: 2800, category: "summer", gender: "women", image: "images/women1.jpeg" },
-  { name: "Women's Light Top", price: 1900, category: "summer", gender: "women", image: "images/women2.jpeg" },
-  { name: "Women's Skirt", price: 1600, category: "summer", gender: "women", image: "images/women3.jpeg" },
-  { name: "Women's Kurti", price: 2200, category: "summer", gender: "women", image: "images/women4.jpeg" },
+  { name: "Women's Summer Dress", price: 2800, category: "summer", gender: "women", image: "women1.jpeg" },
+  { name: "Women's Light Top", price: 1900, category: "summer", gender: "women", image: "women2.jpeg" },
+  { name: "Women's Skirt", price: 1600, category: "summer", gender: "women", image: "women3.jpeg" },
+  { name: "Women's Kurti", price: 2200, category: "summer", gender: "women", image: "women4.jpeg" },
 
-  { name: "Men's Winter Jacket", price: 3500, category: "winter", gender: "men", image: "images/men-winter1.jpeg" },
-  { name: "Men's Sweater", price: 2700, category: "winter", gender: "men", image: "images/men-winter1.jpeg" },
+  { name: "Men's Winter Jacket", price: 3500, category: "winter", gender: "men", image: "men-winter1.jpeg" },
+  { name: "Men's Sweater", price: 2700, category: "winter", gender: "men", image: "men-winter1.jpeg" },
 
-  { name: "Women's Winter Coat", price: 4000, category: "winter", gender: "women", image: "images/women-winter1.jpeg" },
-  { name: "Women's Wool Shawl", price: 3000, category: "winter", gender: "women", image: "images/women-winter1.jpeg" },
+  { name: "Women's Winter Coat", price: 4000, category: "winter", gender: "women", image: "women-winter1.jpeg" },
+  { name: "Women's Wool Shawl", price: 3000, category: "winter", gender: "women", image: "women-winter1.jpeg" },
 ];
 
 let selectedProduct = null;
